@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table width="700px" align="center">
+<form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <tr>
+        <td>
+            <h4>Простая форма поиска с вариантами: </h4>
+    <fieldset>
+        <legend>Строка поиска</legend>
+        <input type="text" name="text">
+        <input type="submit" value="Искать">
+        <br>
+        <input type="radio" name="radio"> на сайте
+        <input type="radio" name="radio"> в google
+        <p><em>Длина запроса не более 10 символов</em></p>
+</fieldset>
+</td>
+<td>
+    <h4>Простая форма поиска с вариантами:</h4>
+    <fieldset>
+        <legend>Строка поиска</legend>
+        <input type="text" name="text">
+        <input type="submit" value="Искать">
+        <br>
+        <input type="radio" name="radio"> на сайте
+        <input type="radio" name="radio"> в google
+        <p><em>* - обязательное поле
+            <br>
+            Автофокус в поле поиска
+        </em></p>
+</fieldset>
+        </td>
+    </tr>
+</form>
+
+
+
+
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <tr>
+        <td>
+            <h4>Простая форма авторизации:</h4>
+    <fieldset>
+        <legend>Авторизируйтесь</legend>
+        <label>
+        <input type="text" name="text"> * Логин
+    </label>
+    <label>
+        <input type="text" name="text"> * Пароль
+    </label>
+        <br>
+        <input type="checkbox" name="check"> Оставаться в системе
+        <br>
+        <input type="submit" value="Войти">
+        <p><em>* - обязательное поле</em></p> 
+</fieldset>
+</td>
+<td>
+    <h4>Опрос (голосование):</h4>
+    <fieldset>
+        <legend>Как Вам?</legend>
+        <input type="radio" name="radio"> ничего
+        <br>
+        <input type="radio" name="radio"> неплохо
+        <br>
+        <input type="radio" name="radio"> хорошо
+        <br>
+        <input type="radio" name="radio"> супер
+        <br>
+        <input type="submit" value="Отправить">
+        <p><em>Есть скрытое поле
+            <br>
+            name=date_voite, value="2013.12.31"
+        </em></p>  
+</fieldset>
+        </td>
+    </tr>
+</form>
+
+
+
+
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <tr>
+        <td>
+            <h4>Отзыв:</h4>
+    <fieldset>
+        <legend>Оставьте Вам отзыв</legend>
+        <label>
+            <input type="text" name="text"> * Имя
+        </label>
+        <br>
+            <label>
+            <input type="email" name="email"> * E-mail
+        </label>
+            <textarea name="text" cols="20" rows="2"></textarea>
+            <br>
+            <input type="submit" value="Отправить">
+            <p><em>* - обязательное поле
+                <br>
+                поле email - с проверкой
+                <br>
+                метод POST
+            </em></p>
+</fieldset>
+</td>
+<td>
+    <h4>Выпадающий и мульти списки:</h4>
+    <fieldset>
+        <legend>Города РБ</legend>
+        <select name="select">
+           <option value="Города РБ">Города РБ</option>
+           <option value="Брест">Брест</option>
+           <option value="Минск">Минск</option>
+           <option value="Витебск">Витебск</option>
+           <option value="Города России">Города России</option>
+           <option value="Москва">Москва</option>
+           <option value="Рязань">Рязань</option>
+           <option value="Магадан">Магадан</option>
+        </select>
+        <input type="submit" value="Ок">
+</fieldset>
+        </td>
+    </tr>
+</form>
+
+
+
+
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <tr>
+        <td>
+            <h4>Загрузка файла на сервер:</h4>
+    <fieldset>
+        <legend>Upload</legend>
+        <p>Файл:</p>
+        <input type="file" name="file">
+        <p>Срок хранения (года):</p>
+        <input type="text" name="text">
+        <input type="submit" value="Загрузить">
+        <p><em>Метод POST
+            <br>
+            В теге form используйте атрибут
+            <br>
+            enctype="multipart/form-data" для отправки
+            <br>
+            файла на сервер
+        </em></p>
+</fieldset>
+</td>
+<td>
+    <h4>Валидация данных HTML5</h4>
+    <fieldset>
+        <legend>Строка поиска</legend>
+        <input type="text" name="text" value="Только русские буквы">
+        <p><em>Телефонный номер в формате
+            <br>
+            +375-ХХ-ХХХХХХХ, где Х - любое число
+            <br>
+        </em></p>
+        <input type="text" name="text" value="+375-29-ХХХХХХХ">
+</fieldset>
+        </td>
+    </tr>
+</form>
+</table>
+</body>
+</html>
